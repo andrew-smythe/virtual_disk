@@ -1,17 +1,12 @@
-/**********************************************************************
-* Title: Lab 6 (Assignment 2) Readme/Notes
-*
-* Author: Andrew Smythe
-*
-* Date: November 16th, 2012
-*
-* Purpose: To demonstrate how to run my virtual disk simulator.
-*
-*
-**********************************************************************/
+# Lab 6 (Assignment 2) Readme/Notes
+### Author 
+Andrew Smythe
+### Date 
+November 16th, 2012
+### Purpose 
+To demonstrate how to run my virtual disk simulator.
 
-How to Run my Program
-----------------------
+### How to Run my Program
 
 To run the program, run the make file. "make run" will build and
 execute the program.
@@ -35,8 +30,7 @@ supply a legitimate file number, the file is written to the specified
 local file on the physical disk.
 
 
-Virtual Disk Filesystem Architecture
--------------------------------------
+### Virtual Disk Filesystem Architecture
 
 My virtual filesystem divides the filesystem up into 4 parts:
 - Superblock (contains info for number of FSM and i-nodes blocks)
@@ -66,8 +60,7 @@ the i-node block (offset from the top with the file number) are saved
 into the user-supplied file.
 
 
-Notable Bugs
--------------
+### Notable Bugs
 
 When a file is read off of the virtual filesystem, the resulting file
 will usually be slightly bigger than the original that was written into
@@ -79,7 +72,6 @@ file.
 For example, if a 1002 byte GIF is saved to the VFS, it will be
 1050 bytes when it is read back to the physical disk.
 
------------------------------------------------------------------------
 -----------------------------------------------------------------------
 
 Example Output:
